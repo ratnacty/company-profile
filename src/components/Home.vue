@@ -98,12 +98,11 @@ const openPopup = (index) => {
     };
 
 const slides = [
-      { src: '/images/gallery-4.png', alt: 'Gallery Image 1' },
-      { src: '/images/gallery-5.jpg', alt: 'Gallery Image 2' },
-      { src: '/images/slide.jpg', alt: 'Gallery Image 3' },
-      { src: '/images/galley-7.jpg', alt: 'Gallery Image 4' },
-      { src: '/images/gallery-8.jpg', alt: 'Gallery Image 5' },
-      { src: '/images/gallery-4.png', alt: 'Gallery Image 6' },
+      { src: '/images/house-of-lea-images-01.jpg', alt: 'Gallery Image 1' },
+      { src: '/images/house-of-lea-images-02.jpg', alt: 'Gallery Image 2' },
+      { src: '/images/house-of-lea-images-03.jpg', alt: 'Gallery Image 3' },
+      { src: '/images/house-of-lea-images-04.jpg', alt: 'Gallery Image 4' },
+      { src: '/images/house-of-lea-images-05.jpg', alt: 'Gallery Image 5' },
     ];
 
 
@@ -247,7 +246,7 @@ const slides = [
 
     <!-- what we do start -->
     <section
-      class="whatwedo   flex flex-col justify-center items-center text-center mt-10 font-light mx-auto sm:px-4 xs:px-4 "
+      class="whatwedo   flex flex-col justify-center items-center text-center mt-10 font-light mx-auto sm:px-8 xs:px-8 "
       id="whatwedo"
     >
       <div
@@ -262,7 +261,7 @@ const slides = [
         quibusdam harum.
       </div>
 
-      <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  sm:px-10 xs:px-10 lg:px-60">
+      <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4   lg:px-60">
         <div
           class="card md:max-w-[273] lg:max-w-[273] border border-brown p-4 xs:p-8 sm:p-8 flex flex-col gap-3 bg-brown-light"
         >
@@ -650,7 +649,7 @@ const slides = [
 
     <!-- testimonials start -->
     <section
-      class="testimonials  mt-16 flex flex-col justify-center items-center text-center mx-auto pb-5 xs:px-4 sm:px-4  lg:px-96"
+      class="testimonials  mt-16 flex flex-col justify-center items-center text-center mx-auto pb-5 xs:px-8 sm:px-8  lg:px-96"
       id="testimonial"
     >
       <div
@@ -663,7 +662,7 @@ const slides = [
         Voluptatum sunt perferendis molestias illum illo dolores, ipsa modi
         quibusdam harum.
       </div>
-      <div class="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 xs:px-8 sm:px-8">
+      <div class="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 ">
         <div class="flex flex-col gap-4 xs:pb-0 sm:pb-0  md:pb-6 lg:pb-6 xl:pb-6 text-lg">
           <div
             class="testimonial-card md:max-w-[330] lg:max-w-[330]  p-8 bg-white flex flex-col justify-center font-light border border-brown"

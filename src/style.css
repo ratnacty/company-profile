@@ -28,11 +28,17 @@ html{
   color: #fff;
 }
 
-#heroSlider .swiper-button-prev , #packageSlider .swiper-button-prev ,#gallerySlider .swiper-button-prev  , #packageSliderMobile .swiper-button-prev, #gallerySliderMobile .swiper-button-prev{
+#heroSlider .swiper-button-prev , #packageSlider .swiper-button-prev ,#gallerySlider .swiper-button-prev  , #packageSliderMobile .swiper-button-prev{
   margin-left: 18px;
 }
+#gallerySliderMobile .swiper-button-prev{
+  margin-left: 28px;
+}
+#gallerySliderMobile .swiper-button-next{
+  margin-right: 28px;
+}
 
-#heroSlider .swiper-button-next, #packageSlider .swiper-button-next ,  #gallerySlider .swiper-button-next, #packageSliderMobile .swiper-button-next , #gallerySliderMobile .swiper-button-next{
+#heroSlider .swiper-button-next, #packageSlider .swiper-button-next ,  #gallerySlider .swiper-button-next, #packageSliderMobile .swiper-button-next {
   margin-right: 18px;
 
 }
