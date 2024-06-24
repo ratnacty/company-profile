@@ -131,7 +131,7 @@ const slides = [
 
     <div class="navbar-extra flex ">
       <a href="//wa.me/081217537878" class="xs:hidden sm:hidden md:hidden lg:hidden xl:block transition font-montserrat uppercase ease-in-out border border-brown bg-white text-brown p-2 px-3 hover:border-white hover:bg-brown hover:text-white hover:-translate-y-1  duration-300">Contact Us</a>
-      <button @click="toggleMenu" class="ml-2 sm:block md:block lg:hidden border border-brown flex justify-center py-3 font-bold text-brown  text-center items-center xs:px-4 sm:px-4 md:px-2 mr-5 bg-white hover:border-white hover:text-white hover:bg-brown ">
+      <button @click="toggleMenu" class="ml-2 sm:block md:block lg:hidden border border-brown flex justify-center py-3  md:py-2  font-bold text-brown  text-center items-center xs:px-4 sm:px-4 md:px-3 mr-5 bg-white hover:border-white hover:text-white hover:bg-brown ">
         <Icon name="menu" />        
       </button>
     </div>
@@ -261,9 +261,9 @@ const slides = [
         quibusdam harum.
       </div>
 
-      <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4   lg:px-60">
+      <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4   lg:px-48">
         <div
-          class="card md:max-w-[273] lg:max-w-[273] border border-brown p-4 xs:p-8 sm:p-8 flex flex-col gap-3 bg-brown-light"
+          class="card md:max-w-[273] lg:max-w-[273] border border-brown p-2 xs:p-8 sm:p-8 md:p-4 lg:p-4 flex flex-col gap-3 bg-brown-light"
         >
           <img :src="Flowers" alt="flower-icon" width="70" class="mx-auto" />
           <div
@@ -389,7 +389,7 @@ const slides = [
         Packages offered
       </div>
 
-      <div class=" xs:hidden sm:hidden md:hidden lg:flex ">
+      <div class=" xs:hidden sm:hidden md:flex lg:flex ">
         <swiper
           id="packageSlider"
           navigation
@@ -403,18 +403,18 @@ const slides = [
         > 
         
           <swiper-slide>
-            <div class="px-24 flex  justify-center gap-5 ">
-              <div class="flex flex-col  text-center gap-3 px-16 w-600 ">
+            <div class="px-24 flex  justify-center gap-5 md:px-0 lg:px-24 ">
+              <div class="flex flex-col  text-center gap-3 px-16 w-600 md:px-0 lg:px-16 ">
                 <div
-                  class="text-brown uppercase text-2xl  font-dmserif mb-3"
+                  class="text-brown uppercase text-2xl  font-dmserif mb-3 pt-0"
                 >
                   Diamond Package
                 </div>
-                <div class="uppercase font-serif font-semibold text-gray">
+                <div class="uppercase font-dmserif text-xl text-gray">
                   Packages Includes:
                 </div>
 
-                <div class="font-light flex flex-col gap-2 mt-3 text-gray ">
+                <div class="font-light flex flex-col gap-2 text-gray  text-lg">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
                   <p>2 Mom Growns</p>
@@ -422,7 +422,7 @@ const slides = [
                   <p>Engagement Growns</p>
                   <p>Bridal Robe</p>
                 </div>
-                <div class="font-light flex flex-col gap-2 mt-3 text-gray text-lg">
+                <div class="font-light flex flex-col gap-2 text-gray text-lg">
                   <p>Make Up Bride By Lea</p>
                   <p>2 Makeup and Haido Mom by Team</p>
                   <p>2 Makeup and Hairdo Bridesmaid/Sister by Team</p>
@@ -433,14 +433,14 @@ const slides = [
                 <div class="font-light mt-2 text-gray">Alpared Rent For Wedding day</div>
 
                 <div
-                  class="uppercase text-2xl font-sdmerif  mt-4 mb-4 text-gray"
+                  class="uppercase text-2xl font-dmserif  mt-2 mb-2 text-gray"
                 >
                   Price Start From
                 </div>
                 <div
                   class="py-5 px-28 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl text-gray"
                 >
-                  <div class="uppercase font-serif text-2xl font-semibold text-gray">
+                  <div class="uppercase font-dmserif text-2xl  text-gray">
                     45 MIO
                   </div>
                   <p class="text-gray">Custom New Wedding Grown</p>
@@ -449,25 +449,25 @@ const slides = [
               <img
                 :src="Package1"
                 alt=""
-                class="package-image object-cover w-600  h-800"
+                class="package-image object-cover lg:w-600  lg:h-800 md:w-330 md:h-800"
               />
             </div>
           </swiper-slide>
 
 
           <swiper-slide>
-            <div class="px-24 flex justify-center gap- ">
-              <div class="flex flex-col text-center gap-3 px-16 w-600">
+            <div class="px-24 flex  justify-center gap-5 md:px-0 lg:px-24 ">
+              <div class="flex flex-col  text-center gap-3 px-16 w-600 md:px-0 lg:px-16 ">
                 <div
-                  class="text-brown uppercase text-2xl font-dmserif  mb-3"
+                  class="text-brown uppercase text-2xl  font-dmserif mb-3 pt-0"
                 >
                   Diamond Package
                 </div>
-                <div class="uppercase font-dmserif text-gray">
+                <div class="uppercase font-dmserif text-xl text-gray">
                   Packages Includes:
                 </div>
 
-                <div class="font-light flex flex-col gap-2 mt-3 text-gray">
+                <div class="font-light flex flex-col gap-2 text-gray  text-lg">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
                   <p>2 Mom Growns</p>
@@ -475,7 +475,7 @@ const slides = [
                   <p>Engagement Growns</p>
                   <p>Bridal Robe</p>
                 </div>
-                <div class="font-light flex flex-col gap-2 mt-3 text-gray">
+                <div class="font-light flex flex-col gap-2 text-gray text-lg">
                   <p>Make Up Bride By Lea</p>
                   <p>2 Makeup and Haido Mom by Team</p>
                   <p>2 Makeup and Hairdo Bridesmaid/Sister by Team</p>
@@ -486,30 +486,30 @@ const slides = [
                 <div class="font-light mt-2 text-gray">Alpared Rent For Wedding day</div>
 
                 <div
-                  class="uppercase text-2xl font-dmserif  mt-4 mb-4 text-gray"
+                  class="uppercase text-2xl font-dmserif  mt-2 mb-2 text-gray"
                 >
                   Price Start From
                 </div>
                 <div
                   class="py-5 px-28 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl text-gray"
                 >
-                  <div class="uppercase  font-montserrat text-2xl font-semibold text-gray">
+                  <div class="uppercase font-dmserif text-2xl  text-gray">
                     45 MIO
                   </div>
-                  <p class="text-gray" > Custom New Wedding Grown</p>
+                  <p class="text-gray">Custom New Wedding Grown</p>
                 </div>
               </div>
               <img
                 :src="Package2"
                 alt=""
-                class="package-image border border-brown object-cover  w-600 h-800 "
+                class="package-image object-cover lg:w-600  lg:h-800 md:w-330 md:h-700"
               />
             </div>
           </swiper-slide>
         </swiper>
       </div>
 
-      <div class="xs:block  sm:block md:block lg:hidden " >
+      <div class="xs:block  sm:block md:hidden lg:hidden " >
         <swiper
           id="packageSliderMobile"
           navigation
