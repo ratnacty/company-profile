@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .root,
+#root,
+#docs-root {
+  --primary: #BC8164;
+  --secondary: #595959;
+  --background-color-: #FBF8F1;
+} */
