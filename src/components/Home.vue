@@ -261,7 +261,7 @@ const slides = [
         quibusdam harum.
       </div>
 
-      <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  md:w-full bg-gray">
+      <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  md:w-full ">
         <div
           class="card md:max-w-[273] lg:max-w-[273] border border-brown p-4 xs:p-8 sm:p-8  flex flex-col gap-3 bg-brown-light"
         >
