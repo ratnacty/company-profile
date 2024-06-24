@@ -118,10 +118,10 @@ const slides = [
  
     <!-- navbar start -->
 
-    <nav :class="['navbar', { scrolled }]" class="navbar  sm:pr-36 sm:px-8  sm:pl-8 text-gray flex justify-between items-center top-0 left-0 right-0 font-light text-xl py-1 sticky bg-yellow-light z-50">
-    <img :src="Logo" class="navbar-logo lg:ps-16 " alt="" />
+    <nav :class="['navbar', { scrolled }]" class="navbar xs:px-8  sm:pr-36 sm:px-8  sm:pl-8 md:px-4 xl:px-32 lg:px-3 lg:text-sm xl:text-lg  text-gray flex justify-between items-center top-0 left-0 right-0 font-light text-xl py-1 sticky bg-yellow-light z-50">
+    <img :src="Logo" class="navbar-logo lg:ps-0  " alt="" />
 
-    <div class="navbar-nav hidden lg:flex gap-14 font-montserrat font-normal">
+    <div class="navbar-nav hidden sm:hidden md:hidden lg:flex xl:flex gap-14 lg:gap-5 xl:gap-14 font-montserrat font-normal">
       <a href="#whatwedo" class="transition ease-in-out  hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">What We Do</a>
       <a href="#packageoffer" class="transition ease-in-out hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">Packages</a>
       <a href="#testimonial" class="transition ease-in-out hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1  duration-300">Testimonials</a>
@@ -130,8 +130,8 @@ const slides = [
     </div>
 
     <div class="navbar-extra flex ">
-      <a href="//wa.me/081217537878" class="xs:hidden sm:hidden md:hidden lg:hidden xl:block transition font-montserrat uppercase ease-in-out border border-brown bg-white text-brown p-2 px-3 hover:border-white hover:bg-brown hover:text-white hover:-translate-y-1  duration-300">Contact Us</a>
-      <button @click="toggleMenu" class="ml-2 sm:block md:block lg:hidden border border-brown flex justify-center py-3  md:py-2  font-bold text-brown  text-center items-center xs:px-4 sm:px-4 md:px-3 mr-5 bg-white hover:border-white hover:text-white hover:bg-brown ">
+      <a href="//wa.me/081217537878" class="xs:hidden sm:hidden md:hidden lg:block xl:block transition font-montserrat uppercase ease-in-out border border-brown bg-white text-brown p-2 px-3 hover:border-white hover:bg-brown hover:text-white hover:-translate-y-1  duration-300">Contact Us</a>
+      <button @click="toggleMenu" class="ml-2 md:ml-0 sm:block md:block lg:hidden xl:hidden  border border-brown flex justify-center py-3  md:py-2  font-bold text-brown  text-center items-center xs:px-4 sm:px-4 md:px-3 sm:mr-3 md:mr-0 bg-white hover:border-white hover:text-white hover:bg-brown ">
         <Icon name="menu" />        
       </button>
     </div>
@@ -246,7 +246,7 @@ const slides = [
 
     <!-- what we do start -->
     <section
-      class="whatwedo   flex flex-col justify-center items-center text-center mt-10 font-light mx-auto sm:px-8 xs:px-8 "
+      class="whatwedo    flex flex-col justify-center items-center text-center mt-10  mx-auto sm:px-8 xs:px-8 md:px-8 lg:px-10 xl:px-80"
       id="whatwedo"
     >
       <div
@@ -255,15 +255,15 @@ const slides = [
         What We Do?
       </div>
 
-      <div class="font-light mb-6 text-lg">
+      <div class=" font-montserrat  text-light-dark mb-6 text-lg font-normal ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
         Voluptatum sunt perferendis molestias illum illo dolores, ipsa modi
         quibusdam harum.
       </div>
 
-      <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4   lg:px-48">
+      <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  md:w-full bg-gray">
         <div
-          class="card md:max-w-[273] lg:max-w-[273] border border-brown p-2 xs:p-8 sm:p-8 md:p-4 lg:p-4 flex flex-col gap-3 bg-brown-light"
+          class="card md:max-w-[273] lg:max-w-[273] border border-brown p-4 xs:p-8 sm:p-8  flex flex-col gap-3 bg-brown-light"
         >
           <img :src="Flowers" alt="flower-icon" width="70" class="mx-auto" />
           <div
@@ -271,7 +271,7 @@ const slides = [
           >
             Wedding Gown
           </div>
-          <div class="text-lg font-montserrat text-light-dark">
+          <div class=" lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark">
             We provide beautiful floral arrangements that will add elegance and charm to your special day. Our expert florists craft stunning bouquets and decorations to match your wedding theme perfectly.
           </div>
         </div>
@@ -285,7 +285,7 @@ const slides = [
           >
             Cakes
           </div>
-          <div class="text-lg font-montserrat text-light-dark">
+          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark">
             Indulge in our exquisite wedding cakes, customized to your taste and style. From classic designs to modern masterpieces, our cakes are not only visually stunning but also deliciously unforgettable.
           </div>
         </div>
@@ -298,7 +298,7 @@ const slides = [
           >
             Makeup
           </div>
-          <div class="text-lg font-montserrat text-light-dark">
+          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark">
             Experience culinary excellence with our top-notch catering services. We offer a variety of gourmet menus, tailored to your preferences, ensuring your guests enjoy a delightful dining experience.
           </div>
         </div>
@@ -312,7 +312,7 @@ const slides = [
           >
             Decorations
           </div>
-          <div class="text-lg font-montserrat text-light-dark">
+          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg font-montserrat text-light-dark">
             Transform your venue into a dream setting with our exceptional decoration services. We bring your vision to life with meticulous attention to detail, creating a magical atmosphere for your celebration.
           </div>
         </div>
@@ -326,7 +326,7 @@ const slides = [
           >
             Photos & Videos
           </div>
-          <div class="text-lg font-montserrat text-light-dark">
+          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark">
             Capture every precious moment with our professional photo and video services. Our talented team ensures that your memories are beautifully preserved, providing you with timeless keepsakes.
           </div>
         </div>
@@ -345,7 +345,7 @@ const slides = [
           >
             Entertainments
           </div>
-          <div class="text-lg font-montserrat text-light-dark">
+          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark">
             Keep your guests entertained with our diverse entertainment options. From live bands and DJs to unique performers, we offer the perfect entertainment to suit your wedding's vibe.
           </div>
         </div>
@@ -359,7 +359,7 @@ const slides = [
           >
             Cars
           </div>
-          <div class="text-lg font-montserrat text-light-dark">
+          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark">
             Arrive in style with our luxurious wedding car services. Choose from a fleet of elegant vehicles to make a grand entrance and a memorable exit on your special day.
           </div>
         </div>
@@ -373,7 +373,7 @@ const slides = [
           >
             Invitations
           </div>
-          <div class="text-lg font-montserrat text-light-dark" >
+          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark" >
             Set the tone for your wedding with our custom-designed invitations. Our creative designs reflect your personal style and provide your guests with a beautiful preview of your big day.
           </div>
         </div>
@@ -382,7 +382,7 @@ const slides = [
     <!-- what we do end -->
 
     <!-- Package offer start -->
-    <section class="packageoffer xs:px-4 sm:px-4" id="packageoffer">
+    <section class="packageoffer xs:px-4 sm:px-4 md:px-8" id="packageoffer">
       <div
         class="title  text-brown uppercase text-5xl mb-12  mx-auto text-center mt-16   font-dmserif"
       >
@@ -403,10 +403,10 @@ const slides = [
         > 
         
           <swiper-slide>
-            <div class="px-24 flex  justify-center gap-5 md:px-0 lg:px-24 ">
-              <div class="flex flex-col  text-center gap-3 px-16 w-600 md:px-0 lg:px-16 ">
+            <div class="px-24 flex  justify-center gap-2  xl:gap-5 lg:gap-1 md:gap-0 md:px-0 lg:px-2 xl:px-24    md:max-h-920 xl:max-h-800 lg:max-h-840   ">
+              <div class="flex flex-col  text-center gap-3 px-16 md:w-600 md:px-5 lg:px-10  xl:px-16 h-auto ">
                 <div
-                  class="text-brown uppercase text-2xl  font-dmserif mb-3 pt-0"
+                  class="text-brown uppercase text-2xl  font-dmserif mb-3 xl:mb-8 lg:mb-3 mb- pt-0"
                 >
                   Diamond Package
                 </div>
@@ -414,7 +414,7 @@ const slides = [
                   Packages Includes:
                 </div>
 
-                <div class="font-light flex flex-col gap-2 text-gray  text-lg">
+                <div class=" flex flex-col gap-2 text-light-dark text-lg">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
                   <p>2 Mom Growns</p>
@@ -422,7 +422,7 @@ const slides = [
                   <p>Engagement Growns</p>
                   <p>Bridal Robe</p>
                 </div>
-                <div class="font-light flex flex-col gap-2 text-gray text-lg">
+                <div class="flex flex-col gap-2 text-light-dark text-lg">
                   <p>Make Up Bride By Lea</p>
                   <p>2 Makeup and Haido Mom by Team</p>
                   <p>2 Makeup and Hairdo Bridesmaid/Sister by Team</p>
@@ -430,36 +430,35 @@ const slides = [
                   <p>1x Test Makeup Bride Retouch Included</p>
                   <p>Retouch Included</p>
                 </div>
-                <div class="font-light mt-2 text-gray">Alpared Rent For Wedding day</div>
+                <div class=" mt-2 text-light-dark">Alpared Rent For Wedding day</div>
 
                 <div
-                  class="uppercase text-2xl font-dmserif  mt-2 mb-2 text-gray"
+                  class="uppercase text-2xl font-dmserif  mt-2 xl:mt-8 xl:mb-5 mb-2 text-gray"
                 >
                   Price Start From
                 </div>
                 <div
-                  class="py-5 px-28 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl text-gray"
+                  class="py-5 px-28 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
                 >
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     45 MIO
                   </div>
-                  <p class="text-gray">Custom New Wedding Grown</p>
+                  <p class="text-light-dark">Custom New Wedding Grown</p>
                 </div>
               </div>
               <img
                 :src="Package1"
                 alt=""
-                class="package-image object-cover lg:w-600  lg:h-800 md:w-330 md:h-800"
+                class="package-image object-cover lg:w-500 xl:w-650 md:w-300 h-auto"
               />
             </div>
           </swiper-slide>
 
-
           <swiper-slide>
-            <div class="px-24 flex  justify-center gap-5 md:px-0 lg:px-24 ">
-              <div class="flex flex-col  text-center gap-3 px-16 w-600 md:px-0 lg:px-16 ">
+            <div class="px-24 flex  justify-center gap-2  xl:gap-5 lg:gap-1 md:gap-0 md:px-0 lg:px-2 xl:px-24    md:max-h-920 xl:max-h-800 lg:max-h-840   ">
+              <div class="flex flex-col  text-center gap-3 px-16 md:w-600 md:px-5 lg:px-10  xl:px-16 h-auto ">
                 <div
-                  class="text-brown uppercase text-2xl  font-dmserif mb-3 pt-0"
+                  class="text-brown uppercase text-2xl  font-dmserif mb-3 xl:mb-8 lg:mb-3 mb- pt-0"
                 >
                   Diamond Package
                 </div>
@@ -467,7 +466,7 @@ const slides = [
                   Packages Includes:
                 </div>
 
-                <div class="font-light flex flex-col gap-2 text-gray  text-lg">
+                <div class=" flex flex-col gap-2 text-light-dark text-lg">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
                   <p>2 Mom Growns</p>
@@ -475,7 +474,7 @@ const slides = [
                   <p>Engagement Growns</p>
                   <p>Bridal Robe</p>
                 </div>
-                <div class="font-light flex flex-col gap-2 text-gray text-lg">
+                <div class=" flex flex-col gap-2 text-light-dark text-lg">
                   <p>Make Up Bride By Lea</p>
                   <p>2 Makeup and Haido Mom by Team</p>
                   <p>2 Makeup and Hairdo Bridesmaid/Sister by Team</p>
@@ -483,29 +482,30 @@ const slides = [
                   <p>1x Test Makeup Bride Retouch Included</p>
                   <p>Retouch Included</p>
                 </div>
-                <div class="font-light mt-2 text-gray">Alpared Rent For Wedding day</div>
+                <div class=" mt-2 text-light-dark">Alpared Rent For Wedding day</div>
 
                 <div
-                  class="uppercase text-2xl font-dmserif  mt-2 mb-2 text-gray"
+                  class="uppercase text-2xl font-dmserif  mt-2 xl:mt-8 xl:mb-5 mb-2 text-gray"
                 >
                   Price Start From
                 </div>
                 <div
-                  class="py-5 px-28 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl text-gray"
+                  class="py-5 px-28 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
                 >
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     45 MIO
                   </div>
-                  <p class="text-gray">Custom New Wedding Grown</p>
+                  <p class="text-light-dark">Custom New Wedding Grown</p>
                 </div>
               </div>
               <img
-                :src="Package2"
+                :src="Package1"
                 alt=""
-                class="package-image object-cover lg:w-600  lg:h-800 md:w-330 md:h-700"
+                class="package-image object-cover lg:w-500 xl:w-650 md:w-300 h-auto"
               />
             </div>
           </swiper-slide>
+
         </swiper>
       </div>
 
@@ -541,7 +541,7 @@ const slides = [
                   Packages Includes:
                 </div>
 
-                <div class="font-light flex flex-col gap-2 mt-3 text-lg font-montserrat text-gray">
+                <div class=" flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
                   <p>2 Mom Growns</p>
@@ -549,7 +549,7 @@ const slides = [
                   <p>Engagement Growns</p>
                   <p>Bridal Robe</p>
                 </div>
-                <div class="font-light flex flex-col gap-2 mt-3 text-lg font-montserrat text-gray">
+                <div class=" flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
                   <p>Make Up Bride By Lea</p>
                   <p>2 Makeup and Haido Mom by Team</p>
                   <p>2 Makeup and Hairdo Bridesmaid/Sister by Team</p>
@@ -557,7 +557,7 @@ const slides = [
                   <p>1x Test Makeup Bride Retouch Included</p>
                   <p>Retouch Included</p>
                 </div>
-                <div class="font-light mt-2 text-lg font-montserrat text-gray">Alpared Rent For Wedding day</div>
+                <div class="text-light-dark mt-2 text-lg font-montserrat ">Alpared Rent For Wedding day</div>
 
                 <div
                   class="uppercase text-2xl font-dmserif text-gray  mt-4 mb-4"
@@ -570,8 +570,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     45 MIO
                   </div>
-                  <div class="text-lg text-gray">Custom New Wedding Grown</div>
-                  <!-- <p>Custom New Wedding Grown</p> -->
+                  <div class="text-lg text-light-dark">Custom New Wedding Grown</div>
                 </div>
               </div>
              
@@ -595,7 +594,7 @@ const slides = [
                   Packages Includes:
                 </div>
 
-                <div class="font-light flex flex-col gap-2 mt-3 text-lg font-montserrat text-gray">
+                <div class=" flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
                   <p>2 Mom Growns</p>
@@ -603,7 +602,7 @@ const slides = [
                   <p>Engagement Growns</p>
                   <p>Bridal Robe</p>
                 </div>
-                <div class="font-light flex flex-col gap-2 mt-3 text-lg font-montserrat text-gray">
+                <div class="flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
                   <p>Make Up Bride By Lea</p>
                   <p>2 Makeup and Haido Mom by Team</p>
                   <p>2 Makeup and Hairdo Bridesmaid/Sister by Team</p>
@@ -611,7 +610,7 @@ const slides = [
                   <p>1x Test Makeup Bride Retouch Included</p>
                   <p>Retouch Included</p>
                 </div>
-                <div class="font-light mt-2 font-montserrat text-gray">Alpared Rent For Wedding day</div>
+                <div class=" mt-2 font-montserrat text-light-dark">Alpared Rent For Wedding day</div>
 
                 <div
                   class="uppercase text-2xl font-dmserif  mt-4 mb-4 text-gray"
@@ -619,12 +618,12 @@ const slides = [
                   Price Start From
                 </div>
                 <div
-                  class="py-5 px-28 border font-montserrat border-brown bg-brown-light font-light rounded-bl-lg rounded-tr-lg text-gray"
+                  class="py-5 px-28 border font-montserrat border-brown bg-brown-light font-light rounded-bl-lg rounded-tr-lg "
                 >
                   <div class="uppercase  text-2xl  font-dmserif text-gray">
                     45 MIO
                   </div>
-                  <p class="text-gray" >Custom New Wedding Grown</p>
+                  <p class="text-light-dark" >Custom New Wedding Grown</p>
                 </div>
               </div>
              
@@ -649,15 +648,15 @@ const slides = [
 
     <!-- testimonials start -->
     <section
-      class="testimonials  mt-16 flex flex-col justify-center items-center text-center mx-auto pb-5 xs:px-8 sm:px-8  lg:px-96"
+      class="testimonials   mt-16  flex flex-col justify-center items-center text-center mx-auto pb-5 sm:px-8 xs:px-8 md:px-8 lg:px-10 xl:px-80  "
       id="testimonial"
     >
       <div
-        class="title text-brown uppercase  text-5xl mb-6 font-dmserif"
+        class="title text-brown uppercase  text-5xl mb-6  font-dmserif"
       >
         Testimonials
       </div>
-      <div class="font-light mb-6 text-lg font-montserrat text-gray">
+      <div class=" font-montserrat text-light-dark mb-6 text-lg ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
         Voluptatum sunt perferendis molestias illum illo dolores, ipsa modi
         quibusdam harum.
@@ -806,7 +805,7 @@ const slides = [
         Photo Gallery
       </div>
 
-      <div class="relative mx-auto flex justify-center xs:hidden sm:hidden md:hidden lg:flex ">
+      <div class="relative mx-auto flex justify-center xs:hidden sm:hidden md:flex lg:flex ">
     <swiper
       id="gallerySlider"
       navigation
@@ -831,7 +830,7 @@ const slides = [
 
   </div>
 
-  <div class="relative mx-auto flex justify-center md:flex lg:hidden sm:flex xs:flex">
+  <div class="relative mx-auto flex justify-center md:hidden lg:hidden sm:flex xs:flex">
     <swiper
       id="gallerySliderMobile"
       navigation
@@ -897,9 +896,9 @@ const slides = [
 
           </div>
         </div>
-        <div class="text-lg">Darmo Hill Block N 15-17 Surabaya</div>
-        <div class="text-lg" >Instagram:@house_of_lea</div>
-        <div class="text-lg" >Tiktok:@houseoflea.sby</div>
+        <div class="text-lg text-gray font-montserrat">Darmo Hill Block N 15-17 Surabaya</div>
+        <div class="text-lg text-gray font-montserrat" >Instagram:@house_of_lea</div>
+        <div class="text-lg text-gray font-montserrat" >Tiktok:@houseoflea.sby</div>
       </div>
     </section>
  <!-- contact end -->
@@ -907,19 +906,19 @@ const slides = [
 
  <!-- footer start -->
     <section class=" footer bg-orange-dark ">
-      <div class="container flex sm:flex-col xs:flex-col md:flex-row lg:flex-row justify-between mx-auto text-center items-center sm:pt-8 xs:pt-8 md:pt-0 lg:pt-0">
+      <div class="container flex sm:flex-col xs:flex-col md:flex-row lg:flex-row justify-between mx-auto text-center items-center sm:pt-8 xs:pt-8 md:pt-0 md:px-8 sm:px-4 xs:px-4 lg:pt-0">
         <div class=" text-start">
           <div class="uppercase text-7xl text-brown font-dmserif mt-4" >
             Celebrating Love, <br> One Wedding at a time.
 
           </div>
-          <div class="text-gray sm:hidden xs:hidden md:block lg:block" >   © 2024 House of Lea. All Rights Reserved.
+          <div class="text-gray sm:hidden xs:hidden md:block lg:block text-lg font-montserrat" >   © 2024 House of Lea. All Rights Reserved.
           </div>
         </div>
         <img :src="Copyright" alt="" width="250" height="200">
       </div>
 
-      <div class="  text-gray sm:block xs:block md:hidden lg:hidden text-center text-2xl  flex mx-auto pb-10 " >© 2024 House of Lea. All Rights Reserved.   </div>
+      <div class="  text-gray sm:block xs:block md:hidden lg:hidden text-center  text-lg  flex mx-auto pb-10 px-4  font-montserrat" >© 2024 House of Lea. All Rights Reserved.   </div>
 
     </section>
      <!-- footer start -->
@@ -927,7 +926,7 @@ const slides = [
      <!-- backtotop start -->
     <div v-if="showBackToTop" @click="scrollToTop" class=" vertical-lr rotated back-to-top uppercase   z-40 fixed bottom-7 right-7  py-1 px-1 text-brown  border border-brown bg-white flex justify-center items-center
     cursor-pointer transition-all ease-linear duration-75  active:text-yellow-light hover:text-white hover:bg-brown hover:border-white text-center">
-    <div class="pt-2">
+    <div class="pt-2 font-montserrat">
       Back to Top 
     </div>
     <Icon name="chevron_right" size="30"/>
