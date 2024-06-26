@@ -448,7 +448,7 @@ const slides = [
                   <p>1x Test Makeup Bride Retouch Included</p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 text-light-dark">Alpard Rent For Wedding day</div>
+                <div class=" mt-2 text-light-dark">Alphard Rent For Wedding day</div>
 
                 <div
                   class="uppercase text32 font-dmserif  mt-2 xl:mt-6 xl:mb-3 mb-2 text-gray"
@@ -500,7 +500,7 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 text-light-dark">Alpard Rent For Wedding day</div>
+                <div class=" mt-2 text-light-dark">Alphard Rent For Wedding day</div>
 
                 <div
                   class="uppercase text32 font-dmserif  mt-2 xl:mt-5 xl:mb-3 mb-2 text-gray"
@@ -563,7 +563,7 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-1 text-light-dark text-lg">Alpard Rent For Wedding day <br> <span class="italic text-sm" >*Add on: Hotel Service +5 mio</span>  </div>
+                <div class=" mt-1 text-light-dark text-lg">Alphard Rent For Wedding day <br> <span class="italic text-sm" >*Add on: Hotel Service +5 mio</span>  </div>
                 <!-- <div class=" font-montserrat text-light-dark italic mt-0 " > *Add on: Hotel Service +5 mio</div> -->
 
 
@@ -651,7 +651,7 @@ const slides = [
                   <p>1x Test Makeup Bride Retouch Included</p>
                   <p>Retouch Included</p>
                 </div>
-                <div class="text-light-dark mt-2 text-lg font-montserrat ">Alpard Rent For Wedding day</div>
+                <div class="text-light-dark mt-2 text-lg font-montserrat ">Alphard Rent For Wedding day</div>
 
                 <div
                   class="uppercase text-2xl font-dmserif text-gray  mt-4 mb-4"
@@ -704,7 +704,7 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 font-montserrat text-light-dark text-lg">Alpard Rent For Wedding day</div>
+                <div class=" mt-2 font-montserrat text-light-dark text-lg">Alphard Rent For Wedding day</div>
 
                 <div
                   class="uppercase text-2xl font-dmserif  mt-4 mb-4 text-gray"
@@ -720,7 +720,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     25 MIO
                   </div>
-                  <p class="text-gray">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
+                  <p class="text-lg text-gray">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
                 </div>
                 <div
                   class="py-4 px-3 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
@@ -728,7 +728,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     20 MIO
                   </div>
-                  <p class="text-gray">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
+                  <p class="text-lg text-gray">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
                 </div>
                 </div>
 
@@ -739,7 +739,7 @@ const slides = [
           </swiper-slide>
 
           <swiper-slide>
-            <div class="px-4 flex flex-col justify-center gap-5 h-auto mb-3 ">
+            <div class="px-4 flex flex-col justify-center gap-5 h-auto mb-8 ">
               <img
                 :src="Package3"
                 alt=""
@@ -771,7 +771,7 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 font-montserrat text-light-dark text-lg">Alpard Rent For Wedding day</div>
+                <div class=" mt-2 font-montserrat text-light-dark text-lg">Alphard Rent For Wedding day</div>
                 <div class=" font-montserrat text-light-dark italic " > *Add on: Hotel Service +5 mio</div>
 
                 <div
@@ -786,7 +786,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     25 MIO
                   </div>
-                  <p class="text-gray">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
+                  <p class="text-gray text-lg">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
                 </div>
                 <div
                   class="py-4 px-3 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
@@ -794,7 +794,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     20 MIO
                   </div>
-                  <p class="text-gray">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
+                  <p class="text-gray text-lg">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
                 </div>
                 </div>
               </div>
