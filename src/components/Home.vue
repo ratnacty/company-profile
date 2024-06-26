@@ -1048,7 +1048,7 @@ const slides = [
     <!-- Photo Gallery end  -->
 
     <!-- contact start -->
-    <section class="contact container  mt-16 flex flex-col justify-center items-center text-center mx-auto pb-10 xs:px-10 sm:px-10 " id="getintouch">
+    <section class="contact   mt-16 flex flex-col justify-center items-center text-center mx-auto pb-10 xs:px-10 sm:px-10 " id="getintouch">
 
       <div
         class="title text-brown uppercase  text-6xl text-40 mb-6 font-dmserif"
