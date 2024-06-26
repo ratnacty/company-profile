@@ -134,28 +134,27 @@ const slides = [
  
     <!-- navbar start -->
 
-    <nav :class="['navbar', { scrolled }]" class="navbar xs:px-2   sm:px-2   md:px-4 xl:px-32 lg:px-3 lg:text-sm xl:text-lg  text-gray flex justify-between items-center top-0 left-0 right-0 font-light text-xl sm:text-lg xs:text-lg py-1 sticky bg-yellow-light z-50">
-    <img :src="Logo" class="navbar-logo lg:ps-0 xl:ps-3  " alt="" />
+  
+  <nav :class="['navbar', { scrolled }]" class="navbar xs:end-1 sm:end-1 md:end-1 sm:px-4 xs:px-4 md:px-4 xl:px-32 lg:px-3 lg:text-sm xl:text-lg text-gray flex justify-between items-center top-0 left-0 right-0 font-light text-xl sm:text-lg xs:text-lg py-1 sticky bg-yellow-light z-50">
+    <img :src="Logo" class="navbar-logo lg:ps-0 xl:ps-3 " alt="Logo" />
 
-    <div class="navbar-nav hidden sm:hidden md:hidden lg:flex xl:flex gap-14 lg:gap-5 xl:gap-14 font-montserrat font-normal">
-      <a href="#whatwedo" class="transition ease-in-out  hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">What We Do</a>
-      <a href="#packageoffer" class="transition ease-in-out hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">Packages</a>
-      <a href="#testimonial" class="transition ease-in-out hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1  duration-300">Testimonials</a>
-      <a href="#photogallery" class="transition ease-in-out hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1  duration-300">Photo Gallery</a>
-      <a href="#getintouch" class="transition ease-in-out hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1  duration-300">Get in Touch</a>
+    <div class="navbar-nav ml-auto hidden sm:hidden md:hidden lg:flex xl:flex gap-14 lg:gap-5 xl:gap-14 font-montserrat font-normal ">
+      <a href="#whatwedo" class="transition ease-in-out hover:bg-brown py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">What We Do</a>
+      <a href="#packageoffer" class="transition ease-in-out hover:bg-brown py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">Packages</a>
+      <a href="#testimonial" class="transition ease-in-out hover:bg-brown py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">Testimonials</a>
+      <a href="#photogallery" class="transition ease-in-out hover:bg-brown py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">Photo Gallery</a>
+      <a href="#getintouch" class="transition ease-in-out hover:bg-brown py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">Get in Touch</a>
     </div>
 
-    <div class="navbar-extra flex ">
-      <a href="//wa.me/081217537878" class="xs:hidden sm:hidden md:hidden lg:block xl:block transition font-montserrat uppercase ease-in-out border border-brown bg-white text-brown p-2 px-3 hover:border-white hover:bg-brown hover:text-white hover:-translate-y-1  duration-300">Contact Us</a>
-      <button @click="toggleMenu" class="ml-2 md:ml-0 sm:block md:block lg:hidden xl:hidden  border border-brown flex justify-center py-3  md:py-2  font-bold text-brown  text-center items-center xs:px-4 xs:ml-20 sm:ml-20 sm:px-4 md:px-3  md:mr-0 bg-white hover:border-white hover:text-white hover:bg-brown  " data-hs-overlay="#hs-overlay-right">
-        <Icon name="menu" />        
+    <div class="navbar-extra flex items-center ml-auto ">
+      <a href="//wa.me/081217537878" class="hidden lg:block xl:block transition font-montserrat uppercase ease-in-out border border-brown bg-white text-brown p-2 px-3 hover:border-white hover:bg-brown hover:text-white hover:-translate-y-1 duration-300">Contact Us</a>
+      <button @click="toggleMenu" class="relative hamburger sm:block md:block lg:hidden xl:hidden border border-brown flex justify-center py-3 md:py-2 font-bold text-brown text-center items-center xs:px-4 sm:px-4 md:px-4 md:mr-0 bg-white hover:border-white hover:text-white hover:bg-brown" data-hs-overlay="#hs-overlay-right">
+        <Icon name="menu" />
       </button>
     </div>
 
-   
-    
-        <!-- Backdrop and Off-canvas menu -->
-    <div :class="{'hs-overlay': true, 'hs-overlay-open': isMenuOpen}">
+    <!-- Backdrop and Off-canvas menu -->
+    <div :class="{'hs-overlay': true, 'hs-overlay-open': isMenuOpen}" class="lg:hidden xl:hidden">
       <!-- Backdrop -->
       <div v-if="isMenuOpen" class="bg-gray opacity-75 w-full h-screen fixed inset-0 z-40" @click="handleBackdropClick"></div>
 
@@ -170,25 +169,25 @@ const slides = [
           </div>
           <nav class="flex flex-col gap-4">
             <a href="#whatwedo" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
-            <Icon name="chevron_right" size="20"/>
-            <div>What We Do</div>
-          </a>
-          <a href="#packageoffer" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
-            <Icon name="chevron_right" size="20"/>
-            <div>Packages</div>
-          </a>
-          <a href="#testimonial" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
-            <Icon name="chevron_right" size="20"/>
-            <div>Testimonials</div>
-          </a>
-          <a href="#photogallery" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
-            <Icon name="chevron_right" size="20"/>
-            <div>Photo Gallery</div>
-          </a>
-          <a href="#getintouch" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
-            <Icon name="chevron_right" size="20"/>
-            <div>Get in Touch</div>
-          </a>
+              <Icon name="chevron_right" size="20"/>
+              <div>What We Do</div>
+            </a>
+            <a href="#packageoffer" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+              <Icon name="chevron_right" size="20"/>
+              <div>Packages</div>
+            </a>
+            <a href="#testimonial" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+              <Icon name="chevron_right" size="20"/>
+              <div>Testimonials</div>
+            </a>
+            <a href="#photogallery" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+              <Icon name="chevron_right" size="20"/>
+              <div>Photo Gallery</div>
+            </a>
+            <a href="#getintouch" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+              <Icon name="chevron_right" size="20"/>
+              <div>Get in Touch</div>
+            </a>
           </nav>
           <div class="flex justify-center items-center mt-auto">
             <img :src="Copyright" alt="Copyright" width="250" height="200" />
@@ -196,8 +195,9 @@ const slides = [
         </div>
       </div>
     </div>
-
   </nav>
+
+
 
     <!-- navbar end -->
     <div class="main bg-yellow-light min-h-screen font-montserrat">
@@ -336,7 +336,7 @@ const slides = [
         </div>
 
         <div
-          class="card md:max-w-[273] lg:max-w-[273] border border-brown p-4 xs:p-5 sm:p-5  flex flex-col gap-3 bg-brown-light"
+          class="card md:max-w-[273] lg:max-w-[273] border border-brown p-4 py-5 xs:p-5 sm:p-5  flex flex-col gap-3 bg-brown-light"
         >
           <img :src="Photo" alt="flower-icon" width="70" class="mx-auto" />
           <div
@@ -344,8 +344,8 @@ const slides = [
           >
             Photos & Videos
           </div>
-          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark">
-            Capture every precious moment with our professional photo and video services. Our talented team ensures that your memories are beautifully preserved, providing you with timeless keepsakes.
+          <div class="lg:text-sm  md:text-sm xs:text-lg sm:text-lg  font-montserrat text-light-dark ">
+            Capture every precious moment with our professional photo and video services. Our talented team ensures that your memories are beautifully preserved, providing you with timeless keepsakes. 
           </div>
         </div>
 
@@ -387,7 +387,7 @@ const slides = [
         >
           <img :src="Invitation" alt="flower-icon" width="70" class="mx-auto" />
           <div
-            class="card-title uppercase font-dmserif text-xl text-gray text-center  md:text-xl lg:text-xl xs:text-3xl sm:text-3xl "
+            class="card-title uppercase font-dmserif text-2xl text-gray text-center  md:text-xl lg:text-xl xs:text-3xl sm:text-3xl "
           >
             Invitations
           </div>
@@ -435,9 +435,9 @@ const slides = [
                 <div class=" flex flex-col gap-2 text-light-dark text-lg">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
-                  <p>2 Mom Growns</p>
-                  <p>2 Prewedding Growns</p>
-                  <p>Engagement Growns</p>
+                  <p>2 Mom Gowns</p>
+                  <p>2 Prewedding Gowns</p>
+                  <p>Engagement Gowns</p>
                   <p>Bridal Robe</p>
                 </div>
                 <div class="flex flex-col gap-2 text-light-dark text-lg">
@@ -448,7 +448,7 @@ const slides = [
                   <p>1x Test Makeup Bride Retouch Included</p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 text-light-dark">Alpared Rent For Wedding day</div>
+                <div class=" mt-2 text-light-dark">Alpard Rent For Wedding day</div>
 
                 <div
                   class="uppercase text32 font-dmserif  mt-2 xl:mt-6 xl:mb-3 mb-2 text-gray"
@@ -487,9 +487,9 @@ const slides = [
                 <div class=" flex flex-col gap-2 text-light-dark text-lg">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
-                  <p>2 Mom Growns</p>
-                  <p>2 Prewedding Growns</p>
-                  <p>Engagement Growns</p>
+                  <p>2 Mom Gowns</p>
+                  <p>2 Prewedding Gowns</p>
+                  <p>Engagement Gowns</p>
                   <p>Bridal Robe</p>
                 </div>
                 <div class=" flex flex-col gap-2 text-light-dark text-lg">
@@ -500,7 +500,7 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 text-light-dark">Alpared Rent For Wedding day</div>
+                <div class=" mt-2 text-light-dark">Alpard Rent For Wedding day</div>
 
                 <div
                   class="uppercase text32 font-dmserif  mt-2 xl:mt-5 xl:mb-3 mb-2 text-gray"
@@ -550,9 +550,9 @@ const slides = [
                 <div class=" flex flex-col gap-2 text-light-dark text-lg">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
-                  <p>2 Mom Growns</p>
-                  <p>2 Prewedding Growns</p>
-                  <p>Engagement Growns</p>
+                  <p>2 Mom Gowns</p>
+                  <p>2 Prewedding Gowns</p>
+                  <p>Engagement Gowns</p>
                   <p>Bridal Robe</p>
                 </div>
                 <div class=" flex flex-col gap-2 text-light-dark text-lg">
@@ -563,7 +563,7 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-1 text-light-dark text-lg">Alpared Rent For Wedding day <br> <span class="italic text-sm" >*Add on: Hotel Service +5 mio</span>  </div>
+                <div class=" mt-1 text-light-dark text-lg">Alpard Rent For Wedding day <br> <span class="italic text-sm" >*Add on: Hotel Service +5 mio</span>  </div>
                 <!-- <div class=" font-montserrat text-light-dark italic mt-0 " > *Add on: Hotel Service +5 mio</div> -->
 
 
@@ -638,9 +638,9 @@ const slides = [
                 <div class=" flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
-                  <p>2 Mom Growns</p>
-                  <p>2 Prewedding Growns</p>
-                  <p>Engagement Growns</p>
+                  <p>2 Mom Gowns</p>
+                  <p>2 Prewedding Gowns</p>
+                  <p>Engagement Gowns</p>
                   <p>Bridal Robe</p>
                 </div>
                 <div class=" flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
@@ -651,7 +651,7 @@ const slides = [
                   <p>1x Test Makeup Bride Retouch Included</p>
                   <p>Retouch Included</p>
                 </div>
-                <div class="text-light-dark mt-2 text-lg font-montserrat ">Alpared Rent For Wedding day</div>
+                <div class="text-light-dark mt-2 text-lg font-montserrat ">Alpard Rent For Wedding day</div>
 
                 <div
                   class="uppercase text-2xl font-dmserif text-gray  mt-4 mb-4"
@@ -691,9 +691,9 @@ const slides = [
                 <div class=" flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
-                  <p>2 Mom Growns</p>
-                  <p>2 Prewedding Growns</p>
-                  <p>Engagement Growns</p>
+                  <p>2 Mom Gowns</p>
+                  <p>2 Prewedding Gowns</p>
+                  <p>Engagement Gowns</p>
                   <p>Bridal Robe</p>
                 </div>
                 <div class="flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
@@ -704,7 +704,7 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 font-montserrat text-light-dark text-lg">Alpared Rent For Wedding day</div>
+                <div class=" mt-2 font-montserrat text-light-dark text-lg">Alpard Rent For Wedding day</div>
 
                 <div
                   class="uppercase text-2xl font-dmserif  mt-4 mb-4 text-gray"
@@ -758,9 +758,9 @@ const slides = [
                 <div class=" flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
                   <p>2 Outer For Morning & Night Look</p>
                   <p>Veil and accessories</p>
-                  <p>2 Mom Growns</p>
-                  <p>2 Prewedding Growns</p>
-                  <p>Engagement Growns</p>
+                  <p>2 Mom Gowns</p>
+                  <p>2 Prewedding Gowns</p>
+                  <p>Engagement Gowns</p>
                   <p>Bridal Robe</p>
                 </div>
                 <div class="flex flex-col gap-2 mt-3 text-lg font-montserrat text-light-dark">
@@ -771,7 +771,7 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 font-montserrat text-light-dark text-lg">Alpared Rent For Wedding day</div>
+                <div class=" mt-2 font-montserrat text-light-dark text-lg">Alpard Rent For Wedding day</div>
                 <div class=" font-montserrat text-light-dark italic " > *Add on: Hotel Service +5 mio</div>
 
                 <div
@@ -1048,7 +1048,7 @@ const slides = [
     <!-- Photo Gallery end  -->
 
     <!-- contact start -->
-    <section class="contact   mt-16 flex flex-col justify-center items-center text-center mx-auto pb-10 xs:px-10 sm:px-10 " id="getintouch">
+    <section class="contact container  mt-16 flex flex-col justify-center items-center text-center mx-auto pb-10 xs:px-10 sm:px-10 " id="getintouch">
 
       <div
         class="title text-brown uppercase  text-6xl text-40 mb-6 font-dmserif"
@@ -1062,7 +1062,7 @@ const slides = [
         </div>
         <div class="uppercase text-2xl  font-dmserif  text-light-dark">
           <div class="text-xl" >WhatsApp:</div>
-          <div class="flex gap-1">
+          <div class="flex number gap-1">
             <a href="//wa.me/081217537878" target="_blank" class="text40  hover:text-brown font-normal" >081217537878 </a>
             <div class="text40  xs:text-32 sm:text-32">/</div>
             <a href="//wa.me/08123170066"  target="_blank" class="text40  hover:text-brown font-normal" > 08123170066</a>
@@ -1081,7 +1081,7 @@ const slides = [
     <section class=" footer bg-orange-dark ">
       <div class="container flex sm:flex-col xs:flex-col md:flex-row lg:flex-row justify-between mx-auto text-center items-center sm:pt-8 xs:pt-8 md:pt-0 md:px-8 sm:px-4 xs:px-4 lg:pt-0">
         <div class=" text-start">
-          <div class="uppercase text-7xl  text-55 text-brown font-dmserif mt-4 xs:px-3 sm:px-3" >
+          <div class="uppercase text-7xl footer-text text-55 text-brown font-dmserif mt-4 xs:px-3 sm:px-3" >
             Celebrating Love, <br> One Wedding at a time.
 
           </div>
