@@ -52,7 +52,7 @@ html{
 }
 
 #packageSliderMobile .swiper-button-prev , #packageSliderMobile .swiper-button-next{
-top: 25rem;
+top: 18rem;
 }
 
 
@@ -182,9 +182,23 @@ top: 25rem;
 
 /* Tablet */
 @media (max-width: 768px) {
-  html {
+  /* html {
     font-size: 78%;
+  } */
+
+  .text-40 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54.84px;
+
   }
+  .text-55 {
+    font-size: 55px;
+    font-weight: 400;
+    /* line-height: 54.84px; */
+
+  }
+
   #gallerySlider .swiper-button-next{
     margin-right: 25px;
   }
