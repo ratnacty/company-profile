@@ -4,7 +4,8 @@ export default {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     'node_modules/preline/dist/*.js',
-  ],    theme: {
+  ],    
+  theme: {
     
     extend: {
      
@@ -93,5 +94,7 @@ export default {
   plugins: [
     require('preline/plugin'),
   ],
+  darkMode: false,
+
 }
 

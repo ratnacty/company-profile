@@ -134,8 +134,8 @@ const slides = [
  
     <!-- navbar start -->
 
-    <nav :class="['navbar', { scrolled }]" class="navbar xs:px-8  sm:pr-36 sm:px-8  sm:pl-8 md:px-4 xl:px-32 lg:px-3 lg:text-sm xl:text-lg  text-gray flex justify-between items-center top-0 left-0 right-0 font-light text-xl sm:text-lg xs:text-lg py-1 sticky bg-yellow-light z-50">
-    <img :src="Logo" class="navbar-logo lg:ps-0  " alt="" />
+    <nav :class="['navbar', { scrolled }]" class="navbar xs:px-2   sm:px-2   md:px-4 xl:px-32 lg:px-3 lg:text-sm xl:text-lg  text-gray flex justify-between items-center top-0 left-0 right-0 font-light text-xl sm:text-lg xs:text-lg py-1 sticky bg-yellow-light z-50">
+    <img :src="Logo" class="navbar-logo lg:ps-0 xl:ps-3  " alt="" />
 
     <div class="navbar-nav hidden sm:hidden md:hidden lg:flex xl:flex gap-14 lg:gap-5 xl:gap-14 font-montserrat font-normal">
       <a href="#whatwedo" class="transition ease-in-out  hover:bg-brown  py-2 px-3 hover:text-white hover:-translate-y-1 duration-300">What We Do</a>
@@ -147,15 +147,13 @@ const slides = [
 
     <div class="navbar-extra flex ">
       <a href="//wa.me/081217537878" class="xs:hidden sm:hidden md:hidden lg:block xl:block transition font-montserrat uppercase ease-in-out border border-brown bg-white text-brown p-2 px-3 hover:border-white hover:bg-brown hover:text-white hover:-translate-y-1  duration-300">Contact Us</a>
-      <button @click="toggleMenu" class="ml-2 md:ml-0 sm:block md:block lg:hidden xl:hidden  border border-brown flex justify-center py-3  md:py-2  font-bold text-brown  text-center items-center xs:px-4 sm:px-4 md:px-3 sm:mr-3 md:mr-0 bg-white hover:border-white hover:text-white hover:bg-brown  " data-hs-overlay="#hs-overlay-right">
+      <button @click="toggleMenu" class="ml-2 md:ml-0 sm:block md:block lg:hidden xl:hidden  border border-brown flex justify-center py-3  md:py-2  font-bold text-brown  text-center items-center xs:px-4 xs:ml-20 sm:ml-20 sm:px-4 md:px-3  md:mr-0 bg-white hover:border-white hover:text-white hover:bg-brown  " data-hs-overlay="#hs-overlay-right">
         <Icon name="menu" />        
       </button>
     </div>
 
    
     
-
-   
         <!-- Backdrop and Off-canvas menu -->
     <div :class="{'hs-overlay': true, 'hs-overlay-open': isMenuOpen}">
       <!-- Backdrop -->
@@ -171,23 +169,23 @@ const slides = [
             <div class="text-brown text-4xl font-serif uppercase text-center font-semibold w-full">Menu</div>
           </div>
           <nav class="flex flex-col gap-4">
-            <a href="#whatwedo" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-4 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+            <a href="#whatwedo" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
             <Icon name="chevron_right" size="20"/>
             <div>What We Do</div>
           </a>
-          <a href="#packageoffer" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-4 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+          <a href="#packageoffer" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
             <Icon name="chevron_right" size="20"/>
             <div>Packages</div>
           </a>
-          <a href="#testimonial" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-4 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+          <a href="#testimonial" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
             <Icon name="chevron_right" size="20"/>
             <div>Testimonials</div>
           </a>
-          <a href="#photogallery" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-4 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+          <a href="#photogallery" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
             <Icon name="chevron_right" size="20"/>
             <div>Photo Gallery</div>
           </a>
-          <a href="#getintouch" @click="toggleMenu" class="text-gray text-lg bg-brown-light py-4 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
+          <a href="#getintouch" @click="toggleMenu" class="text-gray text-lg font-montserrat bg-brown-light py-3 px-4 border border-brown flex items-center gap-2 hover:bg-brown hover:text-white hover:border-white rounded-lg">
             <Icon name="chevron_right" size="20"/>
             <div>Get in Touch</div>
           </a>
@@ -402,7 +400,7 @@ const slides = [
     <!-- what we do end -->
 
     <!-- Package offer start -->
-    <section class="packageoffer xs:px-4 sm:px-4 md:px-8" id="packageoffer">
+    <section class="packageoffer xs:px-4 sm:px-4 md:px-8 xs:mb-auto sm:mb-auto" id="packageoffer">
       <div
         class="title  text-brown uppercase text-6xl  text-40 mb-12  mx-auto text-center mt-16   font-dmserif"
       >
@@ -423,10 +421,10 @@ const slides = [
         > 
         
           <swiper-slide>
-            <div class="px-24 flex  justify-center gap-2  xl:gap-5 lg:gap-1 md:gap-0 md:px-0 lg:px-2 xl:px-24    md:max-h-920 xl:max-h-800 lg:max-h-840   ">
+            <div class="px-24 flex  justify-center gap-2  xl:gap-5 lg:gap-1 md:gap-0 md:px-0 lg:px-2 xl:px-24    md:max-h-920 xl:max-h-820 lg:max-h-840   ">
               <div class="flex flex-col  text-center gap-3 px-16 md:w-600 md:px-5 lg:px-10  xl:px-16 h-auto ">
                 <div
-                  class="text-brown uppercase text-2xl  font-dmserif mb-3 xl:mb-8 lg:mb-3 mb- pt-0"
+                  class="text-brown uppercase text32  font-dmserif mb-3 xl:mb-5 lg:mb-3 mb- pt-0"
                 >
                   Diamond Package
                 </div>
@@ -453,17 +451,17 @@ const slides = [
                 <div class=" mt-2 text-light-dark">Alpared Rent For Wedding day</div>
 
                 <div
-                  class="uppercase text-2xl font-dmserif  mt-2 xl:mt-8 xl:mb-3 mb-2 text-gray"
+                  class="uppercase text32 font-dmserif  mt-2 xl:mt-6 xl:mb-3 mb-2 text-gray"
                 >
                   Price Start From
                 </div>
                 <div
-                  class="py-6 px-28 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
+                  class="py-5 px-28 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
                 >
-                  <div class="uppercase font-dmserif text-2xl  text-gray">
+                  <div class="uppercase font-dmserif text32  text-gray">
                     45 MIO
                   </div>
-                  <p class="text-light-dark">Custom New Wedding Grown</p>
+                  <p class="text-gray">Custom New Wedding Gown</p>
                 </div>
               </div>
               <img
@@ -475,10 +473,10 @@ const slides = [
           </swiper-slide>
 
           <swiper-slide>
-            <div class="px-24 flex  justify-center gap-2  xl:gap-5 lg:gap-1 md:gap-0 md:px-0 lg:px-2 xl:px-24    md:max-h-920 xl:max-h-800 lg:max-h-840   ">
+            <div class="px-24 flex  justify-center gap-2  xl:gap-5 lg:gap-1 md:gap-0 md:px-0 lg:px-2 xl:px-24    md:max-h-920 xl:max-h-820 lg:max-h-840   ">
               <div class="flex flex-col  text-center gap-3 px-16 md:w-600 md:px-5 lg:px-10  xl:px-10 h-auto ">
                 <div
-                  class="text-brown uppercase text-2xl  font-dmserif mb-3 xl:mb-8 lg:mb-3 mb- pt-0"
+                  class="text-brown uppercase text32  font-dmserif mb-3 xl:mb-5 lg:mb-3 mb- pt-0"
                 >
                 Gold Package
                 </div>
@@ -505,27 +503,27 @@ const slides = [
                 <div class=" mt-2 text-light-dark">Alpared Rent For Wedding day</div>
 
                 <div
-                  class="uppercase text-2xl font-dmserif  mt-2 xl:mt-5 xl:mb-5 mb-2 text-gray"
+                  class="uppercase text32 font-dmserif  mt-2 xl:mt-5 xl:mb-3 mb-2 text-gray"
                 >
                   Price Start From
                 </div>
 
                 <div class="flex gap-3">
                   <div
-                  class="py-4 px-3 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
+                  class="py-3 px-4 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
                 >
-                  <div class="uppercase font-dmserif text-2xl  text-gray">
+                  <div class="uppercase font-dmserif text32  text-gray">
                     25 MIO
                   </div>
-                  <p class="text-light-dark">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
+                  <p class="text-gray">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
                 </div>
                 <div
-                  class="py-4 px-3 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
+                  class="py-4 px-4 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
                 >
-                  <div class="uppercase font-dmserif text-2xl  text-gray">
+                  <div class="uppercase font-dmserif text32  text-gray">
                     20 MIO
                   </div>
-                  <p class="text-light-dark">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
+                  <p class="text-gray">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
                 </div>
                 </div>
               </div>
@@ -538,10 +536,10 @@ const slides = [
           </swiper-slide>
 
           <swiper-slide>
-            <div class="px-24 flex  justify-center gap-2  xl:gap-5 lg:gap-1 md:gap-0 md:px-0 lg:px-2 xl:px-24    md:max-h-920 xl:max-h-800 lg:max-h-840   ">
+            <div class="px-24 flex  justify-center gap-2  xl:gap-5 lg:gap-1 md:gap-0 md:px-0 lg:px-2 xl:px-24    md:max-h-920 xl:max-h-820 lg:max-h-840   ">
               <div class="flex flex-col  text-center gap-3 px-16 md:w-600 md:px-5 lg:px-10  xl:px-10 h-auto ">
                 <div
-                  class="text-brown uppercase text-2xl  font-dmserif mb-3 xl:mb-5 lg:mb-3  pt-0"
+                  class="text-brown uppercase text32  font-dmserif mb-3 xl:mb-5 lg:mb-3  pt-0"
                 >
                   Silver Package
                 </div>
@@ -565,31 +563,31 @@ const slides = [
                   <p>1x Test Makeup Bride </p>
                   <p>Retouch Included</p>
                 </div>
-                <div class=" mt-2 text-light-dark text-lg">Alpared Rent For Wedding day <br> <span class="italic text-sm" >*Add on: Hotel Service +5 mio</span>  </div>
+                <div class=" mt-1 text-light-dark text-lg">Alpared Rent For Wedding day <br> <span class="italic text-sm" >*Add on: Hotel Service +5 mio</span>  </div>
                 <!-- <div class=" font-montserrat text-light-dark italic mt-0 " > *Add on: Hotel Service +5 mio</div> -->
 
 
                 <div
-                  class="uppercase text-2xl font-dmserif  mt-2 xl:mt-3 xl:mb-2 mb-2 text-gray"
+                  class="uppercase text32 font-dmserif  mt-2 xl:mt-2 xl:mb-2 mb-2 text-gray"
                 >
                   Price Start From
                 </div>
                 <div class="flex gap-3">
                   <div
-                  class="py-4 px-3 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
+                  class="py-3 px-4 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
                 >
-                  <div class="uppercase font-dmserif text-2xl  text-gray">
+                  <div class="uppercase font-dmserif text32  text-gray">
                     25 MIO
                   </div>
-                  <p class="text-light-dark">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
+                  <p class="text-gray">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
                 </div>
                 <div
-                  class="py-4 px-3 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
+                  class="py-3 px-4 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
                 >
-                  <div class="uppercase font-dmserif text-2xl  text-gray">
+                  <div class="uppercase font-dmserif text32  text-gray">
                     20 MIO
                   </div>
-                  <p class="text-light-dark">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
+                  <p class="text-gray">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
                 </div>
                 </div>
                
@@ -605,7 +603,7 @@ const slides = [
         </swiper>
       </div>
 
-      <div class="xs:block  sm:block md:hidden lg:hidden " >
+      <div class="xs:block  sm:block md:hidden lg:hidden h-auto mb-auto " >
         <swiper
           id="packageSliderMobile"
           navigation
@@ -621,7 +619,7 @@ const slides = [
          
 
           <swiper-slide>
-            <div class="px-4  flex flex-col justify-center gap-5">
+            <div class="px-4  flex flex-col justify-center gap-5 h-auto  mb-0">
               <img
                 :src="Package1"
                 alt=""
@@ -629,7 +627,7 @@ const slides = [
               />
               <div class="flex flex-col text-center gap-3  ">
                 <div
-                  class="text-brown uppercase text-4xl  font-dmserif  mb-3"
+                  class="text-brown uppercase text32  font-dmserif  mb-3"
                 >
                   Diamond Package
                 </div>
@@ -661,12 +659,12 @@ const slides = [
                   Price Start From
                 </div>
                 <div
-                  class="py-5 px-28 sm:px-8 xs:px-8  border border-brown bg-brown-light font-light rounded-bl-lg rounded-tr-lg"
+                  class="py-5 px-28 sm:px-8 xs:px-8 mb-0  border border-brown bg-brown-light font-light rounded-bl-lg rounded-tr-lg"
                 >
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     45 MIO
                   </div>
-                  <div class="text-lg text-light-dark">Custom New Wedding Grown</div>
+                  <div class="text-lg text-gray">Custom New Wedding Gown</div>
                 </div>
               </div>
              
@@ -674,7 +672,7 @@ const slides = [
           </swiper-slide>
 
           <swiper-slide>
-            <div class="px-4 flex flex-col justify-center gap-5">
+            <div class="px-4 flex flex-col justify-center gap-5 h-auto">
               <img
                 :src="Package2"
                 alt=""
@@ -682,7 +680,7 @@ const slides = [
               />
               <div class="flex flex-col text-center gap-3  ">
                 <div
-                  class="text-brown uppercase text-4xl font-dmserif  mb-3"
+                  class="text-brown uppercase text32 font-dmserif  mb-3"
                 >
                   Gold Package
                 </div>
@@ -722,7 +720,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     25 MIO
                   </div>
-                  <p class="text-light-dark">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
+                  <p class="text-gray">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
                 </div>
                 <div
                   class="py-4 px-3 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
@@ -730,7 +728,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     20 MIO
                   </div>
-                  <p class="text-light-dark">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
+                  <p class="text-gray">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
                 </div>
                 </div>
 
@@ -741,7 +739,7 @@ const slides = [
           </swiper-slide>
 
           <swiper-slide>
-            <div class="px-4 flex flex-col justify-center gap-5">
+            <div class="px-4 flex flex-col justify-center gap-5 h-auto mb-3 ">
               <img
                 :src="Package3"
                 alt=""
@@ -749,7 +747,7 @@ const slides = [
               />
               <div class="flex flex-col text-center gap-3 ">
                 <div
-                  class="text-brown uppercase text-4xl font-dmserif  mb-3"
+                  class="text-brown uppercase text32 font-dmserif  mb-3"
                 >
                   Silver Package
                 </div>
@@ -788,7 +786,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     25 MIO
                   </div>
-                  <p class="text-light-dark">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
+                  <p class="text-gray">Exclusive Wedding Gown <br> <span class="italic text-sm">(Gowns with Latest Models)</span> </p>
                 </div>
                 <div
                   class="py-4 px-3 border border-brown bg-brown-light font-light rounded-bl-xl rounded-tr-xl "
@@ -796,7 +794,7 @@ const slides = [
                   <div class="uppercase font-dmserif text-2xl  text-gray">
                     20 MIO
                   </div>
-                  <p class="text-light-dark">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
+                  <p class="text-gray">Basic Wedding Gown <br> <span class="italic text-sm">(Gowns with The Last Year Models)</span> </p>
                 </div>
                 </div>
               </div>
@@ -810,7 +808,7 @@ const slides = [
     <!-- Package offer end -->
 
     <!-- interested start -->
-     <section class="interested bg-orange-dark  xs:block sm:block md:hidden lg:hidden  flex justify-center text-center items-center " id="interested">
+     <section class="interested bg-orange-dark mt-auto  xs:block sm:block md:hidden lg:hidden  flex justify-center text-center items-center " id="interested">
       <div class="  h-80 flex flex-col justify-center text-center items-center ">
           <div class="uppercase text-5xl text-gray font-dmserif" >Interested?</div>
           <a href="//wa.me/081217537878" class=" mt-8 text-2xl transition uppercase ease-in-out border border-brown bg-white text-brown  py-4 px-8 active:text-white hover:border-white hover:bg-brown hover:text-white hover:-translate-y-1  duration-300">Contact Us</a>
@@ -1057,23 +1055,23 @@ const slides = [
       >
         Get In Touch
       </div>
-      <div class="flex flex-col justify-center text-center items-center text-gray gap-3  ">
+      <div class="flex flex-col justify-center text-center items-center text-light-dark gap-3  ">
         <div class="uppercase  font-dmserif  ">
           <div class=" text-xl ">Tel:</div>
-          <a href="tel:0315636199" class="text-4xl xs:text-32 sm:text-32 hover:text-brown font-normal text-gray">031 563 6199</a>
+          <a href="tel:0315636199" class="text40   hover:text-brown font-normal text-light-dark">031 563 6199</a>
         </div>
-        <div class="uppercase text-2xl  font-dmserif  text-gray">
+        <div class="uppercase text-2xl  font-dmserif  text-light-dark">
           <div class="text-xl" >WhatsApp:</div>
           <div class="flex gap-1">
-            <a href="//wa.me/081217537878" target="_blank" class="text-4xl xs:text-32 sm:text-32 hover:text-brown font-normal" >081217537878 </a>
-            <div class="text-32">/</div>
-            <a href="//wa.me/08123170066"  target="_blank" class="text-4xl xs:text-32 sm:text-32 hover:text-brown font-normal" > 08123170066</a>
+            <a href="//wa.me/081217537878" target="_blank" class="text40  hover:text-brown font-normal" >081217537878 </a>
+            <div class="text40  xs:text-32 sm:text-32">/</div>
+            <a href="//wa.me/08123170066"  target="_blank" class="text40  hover:text-brown font-normal" > 08123170066</a>
 
           </div>
         </div>
-        <div class="text-lg text-gray font-montserrat">Darmo Hill Block N 15-17 Surabaya</div>
-        <div class="text-lg text-gray font-montserrat" >Instagram:@house_of_lea</div>
-        <div class="text-lg text-gray font-montserrat" >Tiktok:@houseoflea.sby</div>
+        <div class="text-lg text-light-dark font-montserrat">Darmo Hill Block N 15-17 Surabaya</div>
+        <div class="text-lg text-light-dark font-montserrat" >Instagram:@house_of_lea</div>
+        <div class="text-lg text-light-dark font-montserrat" >Tiktok:@houseoflea.sby</div>
       </div>
     </section>
  <!-- contact end -->
@@ -1087,13 +1085,13 @@ const slides = [
             Celebrating Love, <br> One Wedding at a time.
 
           </div>
-          <div class="text-gray sm:hidden xs:hidden md:block lg:block text-lg  font-montserrat" >   © 2024 House of Lea. All Rights Reserved.
+          <div class="text-light-dark sm:hidden xs:hidden md:block lg:block text-lg xl:block mt-2 xl:ps-3  font-montserrat" >   © 2024 House of Lea. All Rights Reserved.
           </div>
         </div>
         <img :src="Copyright" alt="" width="250" height="200">
       </div>
 
-      <div class="  text-gray sm:block xs:block md:hidden lg:hidden text-center   text-base  flex mx-auto pb-10 px-4  font-montserrat" >© 2024 House of Lea. All Rights Reserved.   </div>
+      <div class="  text-light-dark sm:block xs:block md:hidden lg:hidden text-center   text-base  flex mx-auto pb-10 px-4  font-montserrat" >© 2024 House of Lea. All Rights Reserved.   </div>
 
     </section>
      <!-- footer start -->
@@ -1114,9 +1112,3 @@ const slides = [
   </div>
 </template>
 
-<style scoped>
-
-
-
-/*  */
-</style>
